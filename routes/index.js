@@ -18,5 +18,8 @@ router.get("/shop", (req, res) => {
 router.get("/contact", (req, res) => {
   res.render("contact");
 });
+router.get("/cart", (req, res) => {
+  res.render("cart");
+});
 
 module.exports = router;
