@@ -5582,3 +5582,8 @@ header {
     z-index: 10;
   }
 }
+@media (max-width: 990px) {
+  ul.navbar-nav.attr-nav.align-items-center a.btn.btn-default.rounded-0.animation {
+    display: none;
+  }
+}
