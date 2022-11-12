@@ -79,8 +79,8 @@
     <header
       class="header_wrap fixed-top dark_skin main_menu_uppercase main_menu_weight_600 transparent_header"
     >
-      <%- include('./elements/topheader') %>
-      <div class="container">
+      <%- include('./elements/topheader'); %>
+      <div class="container" style="min-width: 85vw">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="/">
             <img class="logo_light" src="../images/logo_white.png" alt="logo" />
@@ -111,212 +111,30 @@
                 <a class="nav-link" href="/home">Home</a>
               </li>
               <li>
-                <a class="nav-link active" href="/schedule">Schedule</a>
+                <a class="nav-link" href="/about">About us</a>
               </li>
-
-              <li class="dropdown">
-                <a
-                  class="dropdown-toggle nav-link"
-                  href="#"
-                  data-toggle="dropdown"
-                  >Blog</a
-                >
-                <div class="dropdown-menu">
-                  <ul>
-                    <li>
-                      <a
-                        class="dropdown-item nav-link nav_item dropdown-toggler"
-                        href="#"
-                        >Blog Layout</a
-                      >
-                      <div class="dropdown-menu dropdown-reverse">
-                        <ul>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-standard-left-sidebar.html"
-                              >Blog Standard Left Sidebar</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-standard-right-sidebar.html"
-                              >Blog Standard Right Sidebar</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-three-columns.html"
-                              >Blog 3 Columns
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-four-columns.html"
-                              >Blog 4 Columns</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item nav-link nav_item dropdown-toggler"
-                        href="#"
-                        >Blog Masonry</a
-                      >
-                      <div class="dropdown-menu dropdown-reverse">
-                        <ul>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-masonry-three-columns.html"
-                              >Masonry 3 Columns</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-masonry-four-columns.html"
-                              >Masonry 4 Columns</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-masonry-left-sidebar.html"
-                              >Masonry Left Sidebar</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-masonry-right-sidebar.html"
-                              >Masonry Right Sidebar</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item nav-link nav_item dropdown-toggler"
-                        href="#"
-                        >Blog List</a
-                      >
-                      <div class="dropdown-menu dropdown-reverse">
-                        <ul>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-list-left-sidebar.html"
-                              >Left Sidebar</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-list-right-sidebar.html"
-                              >Right Sidabar</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item nav-link nav_item dropdown-toggler"
-                        href="#"
-                        >Sinlge Post</a
-                      >
-                      <div class="dropdown-menu dropdown-reverse">
-                        <ul>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-single.html"
-                              >Default</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-single-left-sidebar.html"
-                              >Left Sidebar</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-single-right-sidebar.html"
-                              >Right Sidebar</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-single-slider.html"
-                              >Slider Post</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-single-video.html"
-                              >Video post</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item nav-link nav_item"
-                              href="blog-single-audio.html"
-                              >Audio Post</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+              <li>
+                <a class="nav-link" href="/courses">Courses</a>
+              </li>
+              <li>
+                <a class="nav-link active" href="/schedule">Schedule</a>
               </li>
               <li>
                 <a class="nav-link" href="/shop">Shop</a>
               </li>
               <li>
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/contact">Contact us</a>
               </li>
             </ul>
           </div>
           <ul class="navbar-nav attr-nav align-items-center">
             <li>
-              <a href="javascript:void(0);" class="nav-link search_trigger"
-                ><i class="ion-ios-search-strong"></i
-              ></a>
-              <div class="search-overlay">
-                <div class="search_wrap">
-                  <form>
-                    <div class="rounded_input">
-                      <input
-                        type="text"
-                        placeholder="Search"
-                        class="form-control"
-                        id="search_input"
-                      />
-                    </div>
-                    <button type="submit" class="search_icon">
-                      <i class="fas fa-search"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </li>
-            <li class="cart_wrap">
-              <a class="nav-link" href="/cart"
-                ><i class="ion-android-cart"></i
-                ><span class="cart_count">2</span></a
+              <a
+                class="btn btn-default rounded-0 animation"
+                href="#"
+                data-animation="fadeInUp"
+                data-animation-delay="0.7s"
+                >Login/Register</a
               >
             </li>
           </ul>

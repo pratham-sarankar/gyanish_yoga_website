@@ -12,6 +12,12 @@ router.get("/home", function (req, res) {
 router.get("/schedule", (req, res) => {
   res.render("schedule");
 });
+router.get("/about", (req, res) => {
+  res.render("about");
+});
+router.get("/courses", (req, res) => {
+  res.render("about");
+});
 router.get("/shop", (req, res) => {
   res.render("shop");
 });
