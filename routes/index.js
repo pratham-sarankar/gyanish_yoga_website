@@ -16,7 +16,7 @@ router.get("/about", (req, res) => {
   res.render("about");
 });
 router.get("/courses", (req, res) => {
-  res.render("about");
+  res.render("courses");
 });
 router.get("/shop", (req, res) => {
   res.render("shop");
