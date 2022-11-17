@@ -129,19 +129,67 @@
           </div>
           <ul class="navbar-nav attr-nav align-items-center">
             <li>
-              <a
+              <div
+                id="loginButton"
                 class="btn btn-default rounded-0 animation"
-                href="#"
                 data-animation="fadeInUp"
                 data-animation-delay="0.7s"
-                >Login/Register</a
               >
+                Login
+              </div>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- END HEADER -->
+
+    <!-- Buy Now -->
+    <div class="formCover">
+      <div class="form">
+        <img src="../images/benifits_img_bg.png" alt="" />
+        <form action="/buy/<%= id %>">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Full Name"
+              name="name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Mobile Number"
+              name="number"
+            />
+          </div>
+          <input
+            type="submit"
+            class="btn btn-primary"
+            style="background-color: rgb(226, 27, 70); border: none"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- Buy Now -->
 
     <!-- START SECTION BREADCRUMB -->
     <section
@@ -203,7 +251,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -232,7 +280,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -257,7 +305,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -284,7 +332,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -314,7 +362,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -341,7 +389,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -371,7 +419,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -395,7 +443,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -422,7 +470,7 @@
                       <ul class="list_none pr_action_btn">
                         <li>
                           <a href="#" class="btn btn-default rounded-0"
-                            >Add To Cart</a
+                            >Buy now</a
                           >
                         </li>
                       </ul>
@@ -470,7 +518,7 @@
     <!-- END SECTION SHOP -->
 
     <!-- START FOOTER -->
-    <%- include('./elements/footer')  %>
+    <%- include('./elements/footer') %>
     <!-- END FOOTER -->
 
     <a href="#" class="scrollup" style="display: none"
