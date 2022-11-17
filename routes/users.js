@@ -20,7 +20,7 @@ router.post("/login", (req, res) => {
 // user login credential will here !!!!!!!!!!!!!!!!!
 
 // user Register credential will here !!!!!!!!!!!!!!!!!
-router.post("/login", (req, res) => {
+router.post("/register", (req, res) => {
   //
   //
   // var userName = req.body.name;
