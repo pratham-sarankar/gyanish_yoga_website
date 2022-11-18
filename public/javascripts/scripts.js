@@ -643,7 +643,7 @@ PAGE JS
 
 try {
   document.querySelector("#loginButton").addEventListener("click", () => {
-    document.querySelector(".formPopup").style.display = "initial";
+    document.querySelector(".formPopup").style.display = "flex";
   });
   document.querySelectorAll(".formclose").forEach((elem) => {
     elem.addEventListener("click", () => {
@@ -654,15 +654,29 @@ try {
     });
   });
   document.querySelector(".dontHaveAccount").addEventListener("click", () => {
-    document.querySelector(".registerForm").style.display = "initial";
+    document.querySelector(".registerForm").style.display = "flex";
     document.querySelector(".formPopup").style.display = "none";
   });
   document
     .querySelector(".alreadyHaveAccount")
     .addEventListener("click", () => {
       document.querySelector(".registerForm").style.display = "none";
-      document.querySelector(".formPopup").style.display = "initial";
+      document.querySelector(".formPopup").style.display = "flex";
     });
 } catch (e) {
   console.log(e);
 }
+
+try {
+  const togglePassword = document.querySelector("#togglePassword");
+  const password = document.querySelector("#id_password");
+
+  togglePassword.addEventListener("click", function (e) {
+    // toggle the type attribute
+    const type =
+      password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    // toggle the eye slash icon
+    this.classList.toggle("fa-eye-slash");
+  });
+} catch (e) {}
