@@ -57,7 +57,7 @@ h6 {
   color: #333333;
   font-family: "Oswald", sans-serif;
 }
-*::selection{
+*::selection {
   background-color: rgb(255, 62, 104);
   color: white;
 }
@@ -3812,8 +3812,8 @@ newsletter_form3 {
 .product_img {
   position: relative;
 }
-.product_img a img{
-  transform: translate(0,0) scale(1);
+.product_img a img {
+  transform: translate(0, 0) scale(1);
 }
 .product_action_box {
   position: absolute;
@@ -5572,6 +5572,78 @@ blockquote p:last-child {
     background-color: #ffc107;
   }
 }
+/* Login form */
+.formPopup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999999999999999;
+  display: none;
+}
+.registerForm {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999999999999999;
+  display: none;
+}
+.formclose {
+  position: absolute;
+  top: 4%;
+  right: 3%;
+}
+.formclose i {
+  font-size: calc((2vw + 5vh) / 2);
+  cursor: pointer;
+  transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-user-select: none;
+  user-select: none;
+}
+.formclose i:hover {
+  color: rgb(250, 96, 100);
+}
+/* Login form */
+
+.formCover {
+  position: fixed;
+  z-index: 999999;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.form {
+  width: 50vw;
+  background-color: #fff;
+  padding: 2vh 2vw;
+  display: flex;
+  justify-content: space-around;
+}
+.form img {
+  height: 50vh;
+  width: 20vw;
+  object-fit: contain;
+}
+.form form {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 header {
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -5583,7 +5655,57 @@ header {
   }
 }
 @media (max-width: 990px) {
-  ul.navbar-nav.attr-nav.align-items-center a.btn.btn-default.rounded-0.animation {
+  ul.navbar-nav.attr-nav.align-items-center
+    a.btn.btn-default.rounded-0.animation {
     display: none;
+  }
+  .form {
+    width: 85vw;
+    background-color: #fff;
+    padding: 2vh 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 65vh;
+    border: 1px solid red;
+  }
+  .form img {
+    height: 25vh;
+    width: 30vw;
+    object-fit: contain;
+  }
+  .form form {
+    border-left: 1px solid red;
+    min-height: 40vh;
+    padding-left: 15vw;
+  }
+}
+@media (max-width: 575px) {
+  .form {
+    width: 85vw;
+    background-color: #fff;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 65vh;
+  }
+  .form img {
+    height: 25vh;
+    width: 70vw;
+    object-fit: contain;
+    border-bottom: 1px solid red;
+  }
+  .form form {
+    min-height: 40vh;
+    border: none;
+    padding: 0;
+  }
+  .formclose {
+    top: 1%;
+  }
+  .formclose i {
+    font-size: 4vh;
   }
 }

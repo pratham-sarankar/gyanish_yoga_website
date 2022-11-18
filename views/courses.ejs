@@ -16,7 +16,7 @@
     />
 
     <!-- SITE TITLE -->
-    <title>Schedule | Dhyana - Yoga Studio & Meditation HTML Template</title>
+    <title>Courses | Dhyana - Yoga Studio & Meditation HTML Template</title>
     <!-- Favicon Icon -->
     <link
       rel="shortcut icon"
@@ -77,11 +77,11 @@
 
     <!-- START HEADER -->
     <header
-    style=" background: #fff;"
+      style="background: #fff"
       class="header_wrap fixed-top dark_skin main_menu_uppercase main_menu_weight_600 transparent_header"
     >
       <%- include('./elements/topheader'); %>
-      <div class="container" style="min-width: 85vw;">
+      <div class="container" style="min-width: 85vw">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="/">
             <img class="logo_light" src="../images/logo_white.png" alt="logo" />
@@ -107,36 +107,37 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav">
-              <li>
-                <a class="nav-link" href="/home">Home</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/about">About us</a>
-              </li>
-              <li>
-                <a class="nav-link active" href="/courses">Courses</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/schedule">Schedule</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/shop">Shop</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/contact">Contact us</a>
-              </li>
-            </ul>
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/about">About us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/classes">Classes</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="/courses">Courses</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/shop">Shop</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/contact">Contact us</a>
+            </li>
+          </ul>
           </div>
           <ul class="navbar-nav attr-nav align-items-center">
             <li>
-              <a
+              <div
+                id="loginButton"
                 class="btn btn-default rounded-0 animation"
-                href="#"
                 data-animation="fadeInUp"
                 data-animation-delay="0.7s"
-                >Login/Register</a
               >
+                Login
+              </div>
             </li>
           </ul>
         </nav>
@@ -170,7 +171,313 @@
     </section>
     <!-- END SECTION BREADCRUMB -->
 
-    
+    <!-- START SECTION GALLERY -->
+    <section class="pb_70">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="grid_container gutter_medium grid_col3">
+              <li class="grid-sizer"></li>
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small1.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item1.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <div
+                    class="carousel_slider owl-carousel owl-theme dots_white"
+                    data-autoplay="true"
+                    data-loop="true"
+                    data-animate-in="fadeIn"
+                    data-animate-out="fadeOut"
+                    data-autoplay-timeout="3000"
+                    data-items="1"
+                  >
+                    <a href="#" class="image_link">
+                      <img
+                        src="../images/gallery_item_small3.jpg"
+                        alt="image"
+                      />
+                    </a>
+                    <a href="#" class="image_link">
+                      <img
+                        src="../images/gallery_item_small4.jpg"
+                        alt="image"
+                      />
+                    </a>
+                    <a href="#" class="image_link">
+                      <img
+                        src="../images/gallery_item_small5.jpg"
+                        alt="image"
+                      />
+                    </a>
+                  </div>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item3.jpg" class="image_popup"
+                        ><i class="ion-images"></i
+                      ></a>
+                      <a
+                        href="../images/gallery_item4.jpg"
+                        class="image_popup d-none"
+                      ></a>
+                      <a
+                        href="../images/gallery_item5.jpg"
+                        class="image_popup d-none"
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small2.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item2.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small6.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item6.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small7.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item7.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small8.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item8.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <div
+                    class="carousel_slider owl-carousel owl-theme dots_white"
+                    data-autoplay="true"
+                    data-loop="true"
+                    data-autoplay-timeout="3000"
+                    data-items="1"
+                  >
+                    <a href="#" class="image_link">
+                      <img
+                        src="../images/gallery_item_small9.jpg"
+                        alt="image"
+                      />
+                    </a>
+                    <a href="#" class="image_link">
+                      <img
+                        src="../images/gallery_item_small10.jpg"
+                        alt="image"
+                      />
+                    </a>
+                  </div>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item9.jpg" class="image_popup"
+                        ><i class="ion-images"></i
+                      ></a>
+                      <a
+                        href="../images/gallery_item10.jpg"
+                        class="image_popup d-none"
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small11.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item11.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small12.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item12.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small13.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item13.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small14.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item14.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+              <!-- START GALLERY ITEM -->
+              <li class="grid_item">
+                <div class="gallery_item">
+                  <a href="#" class="image_link">
+                    <img src="../images/gallery_item_small15.jpg" alt="image" />
+                  </a>
+                  <div class="gallery_content">
+                    <div class="link_container">
+                      <a href="../images/gallery_item15.jpg" class="image_popup"
+                        ><i class="ion-image"></i
+                      ></a>
+                    </div>
+                    <h4><a href="#">Yoga For Beginners</a></h4>
+                    <div class="pr_categories">
+                      <a href="#">Hatha Yoga</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- END GALLERY ITEM -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION GALLERY -->
 
     <!-- START FOOTER -->
     <%- include('./elements/footer') %>

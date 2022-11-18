@@ -640,3 +640,29 @@ PAGE JS
     }
   });
 })(jQuery);
+
+try {
+  document.querySelector("#loginButton").addEventListener("click", () => {
+    document.querySelector(".formPopup").style.display = "initial";
+  });
+  document.querySelectorAll(".formclose").forEach((elem) => {
+    elem.addEventListener("click", () => {
+      console.log(
+        (document.querySelector(".registerForm").style.display = "none")
+      );
+      document.querySelector(".formPopup").style.display = "none";
+    });
+  });
+  document.querySelector(".dontHaveAccount").addEventListener("click", () => {
+    document.querySelector(".registerForm").style.display = "initial";
+    document.querySelector(".formPopup").style.display = "none";
+  });
+  document
+    .querySelector(".alreadyHaveAccount")
+    .addEventListener("click", () => {
+      document.querySelector(".registerForm").style.display = "none";
+      document.querySelector(".formPopup").style.display = "initial";
+    });
+} catch (e) {
+  console.log(e);
+}
