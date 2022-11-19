@@ -1,27 +1,30 @@
-const sequelize = require('database')
-const {DataTypes, Model } = require('sequelize');
+const sequelize = require('../config/database')
+const {DataTypes} = require('sequelize');
 
-class User extends Model {}
-
-User.init(
+const User = sequelize.define("user",
     {
-        username:{
-            type:DataTypes.STRING,
+        username: {
+            type: DataTypes.STRING,
         },
-        email:{
-            type:DataTypes.STRING,
+        email: {
+            type: DataTypes.STRING,
         },
-        phoneNumber:{
-            type:DataTypes.STRING
+        phoneNumber: {
+            type: DataTypes.STRING
         },
-        password:{
-            type:DataTypes.STRING,
+        password: {
+            type: DataTypes.STRING,
         },
-    },{
+    },
+    {
         sequelize,
     }
 );
 
-await User.sync({ alter: true })
+User.sync().then(()=>{
+    console.log("User Model Synced");
+}).catch((error)=>{
+    console.log("User Model Syncing Failed");
+})
 
 module.exports = User;
