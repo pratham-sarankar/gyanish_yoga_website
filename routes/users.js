@@ -1,39 +1,18 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
+const UserController = require('../controllers/user_controller')
+const User = require('../models/user')
 
-/* GET users listing. */
-router.get("/", function (req, res, next) {
-  res.send("respond with a resource");
+router.post("/login", async (req, res) => {
+  let phoneNumber = req.body.phone;
+  let userPassword = req.body.password;
+  await User.findOne({where:phoneNumber});
 });
-router.get("/profile", (req, res) => {
-  res.render("userProfile");
-});
-// user login credential will here !!!!!!!!!!!!!!!!!
-router.post("/login", (req, res) => {
-  //
-  //
-  // var userName = req.body.name;
-  // var userEmail = req.body.email;
-  // var userPhone = req.body.phone;
-  // var userPassword = req.body.password;
-  // var userClassSelection = req.body.class;
-  //
-  //
-});
-// user login credential will here !!!!!!!!!!!!!!!!!
 
-// user Register credential will here !!!!!!!!!!!!!!!!!
-router.post("/register", (req, res) => {
-  //
-  //
-  // var userName = req.body.name;
-  // var userEmail = req.body.email;
-  // var userPhone = req.body.phone;
-  // var userPassword = req.body.password;
-  // var userClassSelection = req.body.class;
-  //
-  //
+router.post("/register", async (req, res) => {
+  const result =await UserController.createUser(req);
+  console.log(result);
+  res.json(result);
 });
-// user Register credential will here !!!!!!!!!!!!!!!!!
 
 module.exports = router;
