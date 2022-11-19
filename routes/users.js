@@ -5,6 +5,9 @@ var router = express.Router();
 router.get("/", function (req, res, next) {
   res.send("respond with a resource");
 });
+router.get("/profile", (req, res) => {
+  res.render("userProfile");
+});
 // user login credential will here !!!!!!!!!!!!!!!!!
 router.post("/login", (req, res) => {
   //
