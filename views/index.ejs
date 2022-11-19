@@ -108,41 +108,53 @@
           >
             <ul class="navbar-nav">
               <li>
-                <a class="nav-link active" href="/home">Home</a>
+                <a class="nav-link active" href="/home/<%= status %>">Home</a>
               </li>
               <li>
-                <a class="nav-link" href="/about">About us</a>
+                <a class="nav-link" href="/about/<%= status %>">About us</a>
               </li>
               <li>
-                <a class="nav-link" href="/classes">Classes</a>
+                <a class="nav-link" href="/classes/<%= status %>">Classes</a>
               </li>
               <li>
-                <a class="nav-link" href="/courses">Courses</a>
+                <a class="nav-link" href="/courses/<%= status %>">Courses</a>
               </li>
               <li>
-                <a class="nav-link" href="/shop">Shop</a>
+                <a class="nav-link" href="/shop/<%= status %>">Shop</a>
               </li>
               <li>
-                <a class="nav-link" href="/contact">Contact us</a>
+                <a class="nav-link" href="/contact/<%= status %>">Contact us</a>
               </li>
             </ul>
-            <div
+            <% if(status=="success"){ %>
+            <div class="nav-link d-flex">
+              <a
+                href="/users/profile"
+                class="ti-user"
+                style="
+                  border-radius: 50%;
+                  padding: 10px;
+                  color: #fff;
+                  background-color: rgb(234, 59, 97);
+                "
+              ></a>
+            </div>
+            <% } else {%>
+            <a
+              href="/loginRegister"
               id="loginButton"
               class="btn btn-default rounded-0 animation nav-link"
               data-animation="fadeInUp"
               data-animation-delay="0.7s"
             >
               Login
-            </div>
+            </a>
+            <% } %>
           </div>
         </nav>
       </div>
     </header>
     <!-- END HEADER -->
-
-    <!-- Form Popup -->
-    <%- include('./elements/loginAndREgisterForm') %>
-    <!-- Form Popup -->
 
     <!-- START SECTION BANNER -->
     <section id="page1" class="banner_slider banner_slide_half p-0">
@@ -638,7 +650,7 @@
             >
               <img
                 data-parallax='{"y": -30, "smoothness": 20}'
-                src="../images/about_img.png"
+                src="../images/about/<%= status %>_img.png"
                 alt="about_img"
               />
             </div>

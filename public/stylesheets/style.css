@@ -5591,7 +5591,6 @@ input{
   align-items: center;
   padding: 0 auto;
   position: relative;
-  display: none;
 }
 .formPopup .container,
 .registerForm .container {
